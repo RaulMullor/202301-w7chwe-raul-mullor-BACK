@@ -5,7 +5,7 @@ import {
   generalError,
 } from "./middlewares/errorMiddleware/errorMiddlewares";
 
-const app = express();
+export const app = express();
 
 const getOk = (req: Request, res: Response) => {
   res.status(200).json({
